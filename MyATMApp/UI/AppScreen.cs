@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace MyATMApp
+namespace MyATMApp.UI
 {
-    public class ATMApp
+    public static class AppScreen
     {
-        static void Main(string[] args)
+        internal static void Welcome()
         {
-
             //clear the console
             Console.Clear();
             //set console title color
@@ -16,9 +19,10 @@ namespace MyATMApp
             //prompt the user to insert their atm card
             Console.WriteLine("Please insert your ATM card.\n");
             Console.WriteLine("Note: Actual ATM machine will accept and validate the physical ATM card, read the card number and validate it.");
+            Utility.PressEnterToContinue();
             
-                Console.WriteLine("\n\nPress Enter to continue...\n");
-            Console.ReadLine();
         }
+
+       
     }
 }
