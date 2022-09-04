@@ -8,6 +8,9 @@ namespace MyATMApp.Domain.Interfaces
 {
     public interface IUserLogin
     {
+        void CheckUserCardNumberAndPassword()
+        {
 
+        }
     }
 }
